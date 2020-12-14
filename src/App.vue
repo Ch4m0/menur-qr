@@ -21,7 +21,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: orange;
-  color: white;
+  color: #4e3333;
   height: 100vh;
 }
 p {
