@@ -1,7 +1,7 @@
 <template>
   <div class="list">
     <header>
-      <h2>Bienvenido a Quiles</h2>
+      <h2>Menu</h2>
     </header>
     <section v-for="(product, idx) in products" :key="idx">
       <img :src="product.foto_producto" :alt="product.nombre" />
