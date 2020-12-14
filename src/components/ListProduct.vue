@@ -34,36 +34,26 @@
     <div class="line-horizontal"></div>
 
     <section>
-      <img src="@/assets/media/burguer_ltZlWTt.jpg" alt="Hamburguesa doble carne" />
+      <img src="@/assets/media/CANTUA.jpg" alt="Hamburguesa doble carne" />
       <div class="text-item">
         <div class="title">
-          <h3>Hamburguesa doble carne</h3>
+          <h3>Salchipapa Mixta</h3>
           <span>1.5k</span>
         </div>
-        <p>
-          Nuestra deliciosa hamburguesa de carne de res X 2 preparada con los
-          mejores ingredientes y la sensacional salsa blanca para disfrutar en
-          cualquier momento del día.\r\n\r\nQué incluye: 150g de carne de res X
-          2, pan, tomate, lechuga y queso doble crema.
-        </p>
+        <p>Salchicha Zenú, carne, pollo, chorizo, butifarra, queso mozzarella, salsa de la casa, salsa rosada y papas chips.</p>
       </div>
     </section>
 
     <div class="line-horizontal"></div>
 
     <section>
-      <img src="@/assets/media/burguer_ltZlWTt.jpg" alt="Hamburguesa doble carne" />
+      <img src="@/assets/media/perrocaliente.jpg" alt="Hamburguesa doble carne" />
       <div class="text-item">
         <div class="title">
-          <h3>Hamburguesa doble carne</h3>
+          <h3>Perro Ranchero</h3>
           <span>1.5k</span>
         </div>
-        <p>
-          Nuestra deliciosa hamburguesa de carne de res X 2 preparada con los
-          mejores ingredientes y la sensacional salsa blanca para disfrutar en
-          cualquier momento del día.\r\n\r\nQué incluye: 150g de carne de res X
-          2, pan, tomate, lechuga y queso doble crema.
-        </p>
+        <p>Perro en pan Bimbo con chorizo ranchero premium, salchicha long y queso mozzarella."</p>
       </div>
     </section>
   </div>
