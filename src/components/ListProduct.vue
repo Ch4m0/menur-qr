@@ -1,37 +1,26 @@
 <template>
   <div class="list">
     <header>
-      <h2>
-        Bienvenido a Quiles
-      </h2>
+      <h2>Bienvenido a Quiles</h2>
     </header>
     <section v-for="(product, idx) in products" :key="idx">
       <img :src="product.foto_producto" :alt="product.nombre" />
       <div class="text-item">
         <div class="title">
           <h3>{{ product.nombre }}</h3>
-          <span>
-            {{ product.precio }}
-          </span>
+          <span>{{ product.precio }}</span>
         </div>
-        <p>
-          {{ product.descripcion }}
-        </p>
+        <p>{{ product.descripcion }}</p>
       </div>
       <div class="line-horizontal"></div>
     </section>
 
     <section>
-      <img
-        src="http://localhost:8000/media/burguer_ltZlWTt.jpg"
-        alt="Hamburguesa doble carne"
-      />
+      <img src="@/assets/media/burguer_ltZlWTt.jpg" alt="Hamburguesa doble carne" />
       <div class="text-item">
         <div class="title">
           <h3>Hamburguesa doble carne</h3>
-          <span>
-            1.5k
-          </span>
+          <span>1.5k</span>
         </div>
         <p>
           Nuestra deliciosa hamburguesa de carne de res X 2 preparada con los
@@ -45,16 +34,11 @@
     <div class="line-horizontal"></div>
 
     <section>
-      <img
-        src="http://localhost:8000/media/burguer_ltZlWTt.jpg"
-        alt="Hamburguesa doble carne"
-      />
+      <img src="@/assets/media/burguer_ltZlWTt.jpg" alt="Hamburguesa doble carne" />
       <div class="text-item">
         <div class="title">
           <h3>Hamburguesa doble carne</h3>
-          <span>
-            1.5k
-          </span>
+          <span>1.5k</span>
         </div>
         <p>
           Nuestra deliciosa hamburguesa de carne de res X 2 preparada con los
@@ -68,16 +52,11 @@
     <div class="line-horizontal"></div>
 
     <section>
-      <img
-        src="http://localhost:8000/media/burguer_ltZlWTt.jpg"
-        alt="Hamburguesa doble carne"
-      />
+      <img src="@/assets/media/burguer_ltZlWTt.jpg" alt="Hamburguesa doble carne" />
       <div class="text-item">
         <div class="title">
           <h3>Hamburguesa doble carne</h3>
-          <span>
-            1.5k
-          </span>
+          <span>1.5k</span>
         </div>
         <p>
           Nuestra deliciosa hamburguesa de carne de res X 2 preparada con los
