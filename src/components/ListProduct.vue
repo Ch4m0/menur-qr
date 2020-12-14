@@ -21,7 +21,7 @@
       <div class="line-horizontal"></div>
     </section>
 
-    <!-- <section>
+    <section>
       <img
         src="http://localhost:8000/media/burguer_ltZlWTt.jpg"
         alt="Hamburguesa doble carne"
@@ -63,7 +63,30 @@
           2, pan, tomate, lechuga y queso doble crema.
         </p>
       </div>
-    </section> -->
+    </section>
+
+    <div class="line-horizontal"></div>
+
+    <section>
+      <img
+        src="http://localhost:8000/media/burguer_ltZlWTt.jpg"
+        alt="Hamburguesa doble carne"
+      />
+      <div class="text-item">
+        <div class="title">
+          <h3>Hamburguesa doble carne</h3>
+          <span>
+            1.5k
+          </span>
+        </div>
+        <p>
+          Nuestra deliciosa hamburguesa de carne de res X 2 preparada con los
+          mejores ingredientes y la sensacional salsa blanca para disfrutar en
+          cualquier momento del día.\r\n\r\nQué incluye: 150g de carne de res X
+          2, pan, tomate, lechuga y queso doble crema.
+        </p>
+      </div>
+    </section>
   </div>
 </template>
 
