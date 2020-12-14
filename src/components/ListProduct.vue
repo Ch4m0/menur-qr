@@ -116,8 +116,8 @@ span {
 }
 
 .line-horizontal {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   background: #b9b5b5;
   height: 1px;
   margin-left: 0.5rem;
