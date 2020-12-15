@@ -15,7 +15,8 @@
       <div class="line-horizontal"></div>
     </section>
 
-    <section>
+    <div class="line-horizontal"></div>
+    <!-- <section>
       <img src="@/assets/media/burguer_ltZlWTt.jpg" alt="Hamburguesa doble carne" />
       <div class="text-item">
         <div class="title">
@@ -55,7 +56,7 @@
         </div>
         <p>Perro en pan Bimbo con chorizo ranchero premium, salchicha long y queso mozzarella."</p>
       </div>
-    </section>
+    </section>-->
   </div>
 </template>
 
@@ -70,7 +71,7 @@ export default {
     };
   },
   created() {
-    axios.get("http://localhost:8000/product/").then(result => {
+    axios.get("https://menudigitalqr.herokuapp.com/product/").then(result => {
       console.log(result);
       this.products = result.data;
     });
