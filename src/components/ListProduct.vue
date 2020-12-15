@@ -15,7 +15,6 @@
       <div class="line-horizontal"></div>
     </section>
 
-    <div class="line-horizontal"></div>
     <!-- <section>
       <img src="@/assets/media/burguer_ltZlWTt.jpg" alt="Hamburguesa doble carne" />
       <div class="text-item">
