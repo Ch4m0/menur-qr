@@ -1,30 +1,20 @@
 <template>
   <div id="app">
-    <ListProduct />
+    <router-view />
   </div>
 </template>
 
 <script>
-import ListProduct from "./components/ListProduct.vue";
-
 export default {
   name: "App",
-  components: {
-    ListProduct
-  }
+  components: {}
 };
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #4e3333;
-  height: 100vh;
-}
-p {
-  margin-bottom: 0;
-  margin-top: 0;
+  color: #2c3e50;
 }
 </style>

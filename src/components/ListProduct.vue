@@ -4,7 +4,10 @@
       <h2>Menu</h2>
     </header>
     <section v-for="(product, idx) in products" :key="idx">
-      <img :src="product.foto_producto" :alt="product.nombre" />
+      <img
+        :src="'https://menudigitalqr.herokuapp.com' + product.foto_producto"
+        :alt="product.nombre"
+      />
       <div class="text-item">
         <div class="title">
           <h3>{{ product.nombre }}</h3>
@@ -70,7 +73,9 @@ export default {
     };
   },
   created() {
-    axios.get("https://menudigitalqr.herokuapp.com/product/").then(result => {
+    let id = this.$route.params.id;
+
+    axios.get("https://menudigitalqr.herokuapp.com/menu/" + id).then(result => {
       console.log(result);
       this.products = result.data;
     });
