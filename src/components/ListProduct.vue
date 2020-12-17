@@ -17,10 +17,10 @@
       />
       <div class="text-item">
         <div class="title">
-          <h3>{{ product.nombre | truncate(14) }}</h3>
+          <h3>{{ product.nombre | truncate(20) }}</h3>
           <span>{{ product.precio }}</span>
         </div>
-        <p>{{ product.descripcion | truncate(40) }}</p>
+        <p>{{ product.descripcion | truncate(60) }}</p>
       </div>
       <div class="line-horizontal"></div>
     </section>
