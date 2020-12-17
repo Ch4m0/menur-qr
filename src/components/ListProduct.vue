@@ -3,17 +3,20 @@
     <header>
       <h2>Menu</h2>
     </header>
+
+    <Tabs :categories="categories" @select-category="handleCategory" />
     <section v-for="(product, idx) in products" :key="idx">
       <img
         :src="'https://menudigitalqr.herokuapp.com' + product.foto_producto"
         :alt="product.nombre"
+        style="height: 100px; width: 100px; object-fit: contain"
       />
       <div class="text-item">
         <div class="title">
-          <h3>{{ product.nombre }}</h3>
+          <h3>{{ product.nombre | truncate(14) }}</h3>
           <span>{{ product.precio }}</span>
         </div>
-        <p>{{ product.descripcion }}</p>
+        <p>{{ product.descripcion | truncate(40) }}</p>
       </div>
       <div class="line-horizontal"></div>
     </section>
@@ -63,22 +66,40 @@
 </template>
 
 <script>
+import Tabs from "./Tabs.vue";
 import axios from "axios";
 
 export default {
+  components: { Tabs },
+
   name: "ListProduct",
+
+  filters: {
+    truncate: function(text, stop, clamp) {
+      return text.slice(0, stop) + (stop < text.length ? clamp || "..." : "");
+    }
+  },
+
   data() {
     return {
+      categories: [],
       products: []
     };
   },
+
   created() {
     let id = this.$route.params.id;
 
     axios.get("https://menudigitalqr.herokuapp.com/menu/" + id).then(result => {
-      console.log(result);
-      this.products = result.data;
+      this.categories = result.data;
+      this.products = result.data[0].products;
     });
+  },
+
+  methods: {
+    handleCategory(id) {
+      this.products = this.categories.filter(c => c.id == id)[0].products;
+    }
   }
 };
 </script>
@@ -87,6 +108,11 @@ export default {
 .list {
   display: flex;
   flex-direction: column;
+}
+section {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 header {
@@ -105,6 +131,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .text-item {
@@ -114,6 +141,7 @@ img {
 
 img {
   width: 100%;
+  border-radius: 0.5rem;
 }
 
 span {
