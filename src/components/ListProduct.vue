@@ -4,7 +4,11 @@
       <h2>Menu</h2>
     </header>
 
-    <Tabs :categories="categories" @select-category="handleCategory" />
+    <Tabs
+      :categories="categories"
+      @select-category="handleCategory"
+      show-arrows
+    />
     <section v-for="(product, idx) in products" :key="idx">
       <img
         :src="'https://menudigitalqr.herokuapp.com' + product.foto_producto"
