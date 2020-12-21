@@ -124,6 +124,7 @@ section {
   display: flex;
   align-items: center;
   margin-top: 1rem;
+  justify-content: space-between;
 }
 
 header {
