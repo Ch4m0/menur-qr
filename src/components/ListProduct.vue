@@ -11,7 +11,7 @@
     />
     <section v-for="(product, idx) in products" :key="idx">
       <img
-        :src="'https://menudigitalqr.herokuapp.com' + product.foto_producto"
+        :src="'https://abnerantonio.pythonanywhere.com' + product.foto_producto"
         :alt="product.nombre"
         style="height: 100px; width: 100px; object-fit: contain"
       />
