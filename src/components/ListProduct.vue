@@ -4,11 +4,7 @@
       <h2>Menu</h2>
     </header>
 
-    <Tabs
-      :categories="categories"
-      @select-category="handleCategory"
-      show-arrows
-    />
+    <Tabs :categories="categories" @select-category="handleCategory" show-arrows />
     <section v-for="(product, idx) in products" :key="idx">
       <img
         :src="'https://menudigitalqr.herokuapp.com' + product.foto_producto"
@@ -93,11 +89,18 @@ export default {
 
   created() {
     let id = this.$route.params.id;
+    // let encryptedText = this.$route.params.id;
 
-    axios.get("https://menudigitalqr.herokuapp.com/menu/" + id).then(result => {
-      this.categories = result.data;
-      this.products = result.data[0].products;
-    });
+    // const id = this.CryptoJS.AES.decrypt(encryptedText, "secretkey").toString(
+    //   this.CryptoJS.enc.Utf8
+    // );
+
+    axios
+      .get("http://abnerantonio.pythonanywhere.com/menu/" + id)
+      .then(result => {
+        this.categories = result.data;
+        this.products = result.data[0].products;
+      });
   },
 
   methods: {
