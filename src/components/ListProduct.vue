@@ -4,7 +4,11 @@
       <h2>Menu</h2>
     </header>
 
-    <Tabs :categories="categories" @select-category="handleCategory" show-arrows />
+    <Tabs
+      :categories="categories"
+      @select-category="handleCategory"
+      show-arrows
+    />
     <section v-for="(product, idx) in products" :key="idx">
       <img
         :src="'https://menudigitalqr.herokuapp.com' + product.foto_producto"
@@ -96,7 +100,7 @@ export default {
     // );
 
     axios
-      .get("http://abnerantonio.pythonanywhere.com/menu/" + id)
+      .get("https://abnerantonio.pythonanywhere.com/menu/" + id)
       .then(result => {
         this.categories = result.data;
         this.products = result.data[0].products;
